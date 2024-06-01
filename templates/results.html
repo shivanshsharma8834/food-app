@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dish Results</title>
+</head>
+<body>
+    <h1>Recommended Dishes</h1>
+    <ul>
+        {% for dish in dishes %}
+            <li>
+                <h2>{{ dish.name }}</h2>
+                <p><strong>Ingredients:</strong> {{ dish.ingredients }}</p>
+                <p><strong>Diet:</strong> {{ dish.diet }}</p>
+                <p><strong>Preparation Time:</strong> {{ dish.prep_time }}</p>
+                <p><strong>Cooking Time:</strong> {{ dish.cook_time }}</p>
+                <p><strong>Flavor Profile:</strong> {{ dish.flavor_profile }}</p>
+                <p><strong>Course:</strong> {{ dish.course }}</p>
+                <p><strong>State:</strong> {{ dish.state }}</p>
+                <p><strong>Region:</strong> {{ dish.region }}</p>
+                <img src="{{ dish.img_url }}" alt="{{ dish.name }}" width="300">
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Go Back</a>
+</body>
+</html>
