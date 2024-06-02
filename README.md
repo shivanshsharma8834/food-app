@@ -72,3 +72,5 @@ Open the server port displayed on the terminal on your browser and use the app t
 http://localhost:5173/
 
 A big thanks to @sksarvesh007 and @Raashika0201 for aiding to build this project for Jugaad Hacks - Summer of AI hackathon. 
+Team name: pip-luck 
+
