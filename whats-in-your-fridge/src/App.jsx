@@ -30,11 +30,11 @@ function App() {
       <div className="mainApp">
         <h1>What's in your fridge?</h1>
           <form onSubmit={handleSubmit}>
-            <input
+            <input  
               type="text"
               value={ingredients}
               onChange={handleInputChange}
-              placeholder="Enter ingredients, e.g., tomato, cheese, garlic"
+              placeholder="Enter ingredients, e.g., chicken, oil, garam masala"
             />
             <button type="submit">Find Similar Dishes</button>
           </form>
