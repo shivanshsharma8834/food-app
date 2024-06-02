@@ -23,19 +23,24 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Similar Dishes Finder</h1>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            value={ingredients}
-            onChange={handleInputChange}
-            placeholder="Enter ingredients, e.g., tomato, cheese, garlic"
-          />
-          <button type="submit">Find Similar Dishes</button>
-        </form>
-        <DishList dishes={dishes} />
-      </header>
+      {/* <header className="App-header">
+        
+      </header> */}
+      <div className='empty'></div>
+      <div className="mainApp">
+        <h1>What's in your fridge?</h1>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              value={ingredients}
+              onChange={handleInputChange}
+              placeholder="Enter ingredients, e.g., tomato, cheese, garlic"
+            />
+            <button type="submit">Find Similar Dishes</button>
+          </form>
+          <DishList dishes={dishes} />
+      </div>
+      <div className='empty'></div>
     </div>
   );
 }
